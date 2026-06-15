@@ -24,13 +24,11 @@
 
 ## 👨‍💻 About Me
 
-<img align="right" width="380" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif"/>
-
 ```python
 class Arshid:
     def __init__(self):
         self.name      = "Arshid Chandran P K"
-        self.location  = "Cannanore, Kerala, India 🇮🇳"
+        self.location  = "Kerala, India 🇮🇳"
         self.degree    = "B.Tech - Computer Science Engineering (Data Science)"
         self.role      = "Aspiring Data Scientist & Developer"
 
@@ -137,7 +135,7 @@ print(me.motto())
 ## 💼 Experience
 
 <details>
-<summary>📊 Data Science Projects — Self-Directed Learning | 2023 – Present | Cannanore, Kerala, India</summary>
+<summary>📊 Data Science Projects — Self-Directed Learning | 2024 – Present | Kerala, India</summary>
 <br/>
 
 > `Python` `Pandas` `NumPy` `Matplotlib` `Data Visualization` `EDA`
@@ -150,7 +148,7 @@ print(me.motto())
 </details>
 
 <details>
-<summary>🌐 Web Development Projects — Self-Directed Learning | 2023 – Present | Cannanore, Kerala, India</summary>
+<summary>🌐 Web Development Projects — Self-Directed Learning | 2023 – Present | Kerala, India</summary>
 <br/>
 
 > `HTML5` `CSS3` `JavaScript` `Responsive Design` `Git & GitHub`
@@ -172,11 +170,10 @@ print(me.motto())
 |---|---|---|
 | [**Personal Portfolio Website**](https://t-ark.github.io/portfolio/) | `HTML5` `CSS3` `JavaScript` | Fully responsive personal portfolio showcasing projects & skills, deployed via GitHub Pages |
 | **Data Analysis & Visualization Toolkit** | `Python` `Pandas` `NumPy` `Matplotlib` | End-to-end EDA pipeline — data cleaning, preprocessing & visual storytelling on real-world datasets |
-| **Responsive Web Application** | `HTML5` `CSS3` `JavaScript` | Multi-page responsive site built around clean UI, accessibility & cross-device layout |
+| [**Smart Banking System**](https://github.com/T-ARK/Smart_Banking_System) | `HTML5` `CSS3` `JavaScript` `PHP` `MySQL` | Banking management system with account handling, transactions, user authentication, and administrative controls |
+| [**SQL Migrator**](https://github.com/sql-migrator-team/SQL-MIGRATOR) | `Python` `Flask` `MySQL` `PostgreSQL` `HTML5` `CSS3` `JavaScript` | Web-based database migration platform for converting and validating SQL schemas between multiple database systems |
 
 </div>
-
-> 📝 *Swap in your actual repo links and add concrete metrics (stars, dataset size, accuracy %, users, etc.) as your projects grow.*
 
 ---
 
@@ -193,17 +190,15 @@ print(me.motto())
 
 </div>
 
-> 📝 *Add hackathon results, certifications, or LeetCode/competitive-programming stats here once you have them.*
-
 ---
 
 ## 🎓 Education
 
 <div align="center">
 
-| Degree | Institution | Year | Score |
-|---|---|---|---|
-| B.Tech – Computer Science Engineering (Data Science) | [College Name] | [Expected Graduation Year] | [CGPA] |
+| Degree |
+|---|
+| B.Tech – Computer Science Engineering (Data Science) |
 
 </div>
 
