@@ -1,100 +1,57 @@
-<div align="center">
+<!-- ═════════════ 1. NAME / HEADER (first container) ═════════════ --> <div align="center"> <img src="https://capsule-render.vercel.app/api?type=transparent&height=140&text=T-ARK&fontSize=90&fontColor=58A6FF&fontAlignY=55&animation=fadeIn&desc=Arshid%20Chandran%20P%20K&descSize=20&descAlignY=82&descColor=8B949E" alt="T-ARK" /> <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=3000&pause=1000&color=3FB950&center=true&vCenter=true&width=520&height=30&lines=Aspiring+Data+Scientist+%26+Dev;Machine+Learning+%7C+Cybersecurity;Stay+curious.+Keep+building." alt="Typing SVG" /> </div> <br/> <!-- ═════════════ 2. TERMINAL / NEOFETCH ═════════════ -->
+bash
+$ neofetch --user T-ARK
 
-<!-- ======================================================== -->
-<!-- 01. TOP SECTION: $ celefetch + World Map + // WHO I AM   -->
-<!-- ======================================================== -->
-<img src="./assets/01_top_section.svg" alt="Celefetch Terminal, World Map & Who I Am" width="100%" />
-
-<br><br>
-
-<!-- ======================================================== -->
-<!-- 02. STARRED TOPICS: Tech & Tools Icons Matrix            -->
-<!-- ======================================================== -->
-<img src="./assets/02_starred_topics.svg" alt="Starred Topics - Developer Technologies & Tools" width="100%" />
-
-<br><br>
-
-<!-- ======================================================== -->
-<!-- 03. TELEMETRY LINE CHART: Real-Time Activity Monitoring  -->
-<!-- ======================================================== -->
-<img src="./assets/03_telemetry_chart.svg" alt="Telemetry Activity Line Chart" width="100%" />
-
-<br><br>
-
-<!-- ======================================================== -->
-<!-- 04. METRICS & ART: Radar Chart, Isometric Island, 3D Cal -->
-<!-- ======================================================== -->
-<img src="./assets/04_metrics_and_art.svg" alt="Activity Radar Chart, Floating Isometric Island, 3D Contribution Calendar" width="100%" />
-
-<br><br>
-
-<!-- ======================================================== -->
-<!-- 05. FEATURED PROJECTS: 4 Interactive Project Cards       -->
-<!-- ======================================================== -->
-<img src="./assets/05_featured_projects.svg" alt="Featured Projects" width="100%" />
-
-<p align="center">
-  <a href="https://arshidchandranpk.netlify.app"><code>[ 🌐 Personal Portfolio Website ]</code></a> &nbsp;•&nbsp;
-  <a href="https://github.com/T-ARK"><code>[ 📊 Data Analysis Toolkit ]</code></a> &nbsp;•&nbsp;
-  <a href="https://github.com/T-ARK"><code>[ 🏛️ Smart Banking System ]</code></a> &nbsp;•&nbsp;
-  <a href="https://github.com/T-ARK"><code>[ 🗄️ SQL Migrator Platform ]</code></a>
-</p>
-
-<br>
-
-<!-- ======================================================== -->
-<!-- CONNECT & SOCIAL UPLINKS                                 -->
-<!-- ======================================================== -->
-<p align="center">
-  <a href="mailto:arshidchandranpk@gmail.com"><img src="https://img.shields.io/badge/Email-dc2626?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a> &nbsp;
-  <a href="https://www.linkedin.com/in/arshid-chandran-p-k"><img src="https://img.shields.io/badge/LinkedIn-0077b5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a> &nbsp;
-  <a href="https://github.com/T-ARK"><img src="https://img.shields.io/badge/GitHub-130c29?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a> &nbsp;
-  <a href="https://arshidchandranpk.netlify.app"><img src="https://img.shields.io/badge/Portfolio-0e7490?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
-</p>
-
-</div>
-
-<br>
-
----
-
-<details>
-<summary><b>👾 Click to view full source code &amp; developer configuration</b></summary>
-
-```python
+  T-ARK@github
+  ────────────────────────────
+  OS        : Curiosity 1.0 (Kerala, India 🇮🇳)
+  Host      : B.Tech CSE (Data Science)
+  Shell     : Python / C / C++ / JavaScript
+  Focus     : Machine Learning · Cybersecurity · Data Viz
+  Languages : English · Malayalam · Hindi · Tamil
+  Hobbies   : Photography · Design · Debugging 🐛
+<!-- ═════════════ 3. WHO I AM ═════════════ -->
+// WHO I AM
+python
+# developer.py
 class Developer:
     def __init__(self):
-        self.name = "Arshid Chandran P K"
+        self.name     = "Arshid Chandran P K"
+        self.github   = "T-ARK"
         self.location = "Kerala, India 🇮🇳"
-        self.degree = "B.Tech - Computer Science Engineering (Data Science)"
-        self.role = "Aspiring Data Scientist & Dev"
+        self.degree   = "B.Tech - Computer Science Engineering (Data Science)"
+        self.role     = "Aspiring Data Scientist & Dev"
 
         self.stack = {
-            "languages": ["Python", "C", "C++", "JS"],
-            "web": ["HTML5", "CSS3", "Responsive"],
-            "data_science": ["NumPy", "Pandas", "Scikit"],
+            "languages":    ["Python", "C", "C++", "JS"],
+            "web":          ["HTML5", "CSS3", "Responsive"],
+            "data_science": ["NumPy", "Pandas", "Scikit-learn"],
         }
+
         self.currently_learning = [
             "Machine Learning",
             "Cybersecurity",
             "Advanced Data Visualization",
         ]
-        self.interests = [
-            "Data Science",
-            "AI",
-            "Cybersecurity",
-            "Photography",
-            "Design",
-        ]
+
+        self.interests        = ["Data Science", "AI", "Cybersecurity", "Photography", "Design"]
         self.languages_spoken = ["English", "Malayalam", "Hindi", "Tamil"]
-        self.fun_fact = "I love debugging & cameras 📷"
+        self.fun_fact         = "I love debugging & cameras 📷"
 
     def motto(self):
         return "Stay curious. Keep building."
-```
+<!-- ═════════════ 4. TECH STACK (selected icons only) ═════════════ -->
+// STARRED TOPICS
+<p align="left"> <img src="https://skillicons.dev/icons?i=py,c,cpp,js,html,css,react,fastapi,pandas,numpy,sklearn,linux,git,vscode&perline=14" alt="tech stack" /> </p> <!-- ═════════════ 5. DYNAMIC STATS ═════════════ -->
+// STATS
+<div align="center"> <img src="https://github-readme-stats.vercel.app/api?username=T-ARK&show_icons=true&hide_border=true&bg_color=00000000&title_color=58A6FF&icon_color=3FB950&text_color=C9D1D9&include_all_commits=true" height="165" alt="GitHub stats" /> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=T-ARK&layout=compact&hide_border=true&bg_color=00000000&title_color=58A6FF&text_color=C9D1D9" height="165" alt="Top languages" /> <br/> <img src="https://streak-stats.demolab.com?user=T-ARK&hide_border=true&background=00000000&ring=3FB950&fire=F78166&currStreakLabel=58A6FF&sideLabels=C9D1D9&currStreakNum=C9D1D9&sideNums=C9D1D9&dates=8B949E" alt="Streak" /> </div>
+// CONTRIBUTION ACTIVITY
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=T-ARK&bg_color=00000000&color=C9D1D9&line=58A6FF&point=FFFFFF&area=true&area_color=58A6FF&hide_border=true" alt="Activity graph" width="100%" /> <!-- ═════════════ 6. lowlighter/metrics (generated by GitHub Action) ═════════════ -->
+// METRICS
+<div align="center"> <img src="./metrics/github-metrics.svg" alt="Metrics overview" width="100%" /> <img src="./metrics/isocalendar.svg" alt="Isometric calendar" width="100%" /> </div>
+// FEATURED PROJECTS
+<div align="center"> <img src="./metrics/pinned.svg" alt="Pinned repositories" width="100%" /> </div> <!-- ═════════════ 7. FOOTER ═════════════ --> <div align="center"> <img src="https://i.giphy.com/media/10IEUy0f5V3WLu/giphy.webp" width="220" alt="coding gif" />
 
-</details>
+<br/><br/>
 
-<div align="center">
-  <sub><code>T-ARK // ARSHID CHANDRAN P K • 2026 • DESIGN | DEVELOP | DEFEND</code></sub>
-</div>
+<img src="https://komarev.com/ghpvc/?username=T-ARK&label=Profile%20views&color=58a6ff&style=flat-square&labelColor=00000000" alt="Profile views" /> <img src="https://capsule-render.vercel.app/api?type=transparent&height=80&section=footer&text=Stay%20curious.%20Keep%20building.&fontSize=18&fontColor=8B949E&fontAlignY=60" alt="footer" /> </div>
