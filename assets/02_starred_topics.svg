@@ -1,0 +1,332 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 195" width="100%" height="100%">
+  <defs>
+    <linearGradient id="topic-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c18" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <clipPath id="tile-clip">
+      <rect width="36" height="36" rx="8" />
+    </clipPath>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .icon-tile { rx: 8px; width: 36px; height: 36px; }
+  </style>
+
+  <!-- Container Box -->
+  <rect width="940" height="195" rx="8" fill="url(#topic-bg)" stroke="#1e293b" stroke-width="1.2" />
+
+  <!-- Header -->
+  <g transform="translate(18, 22)">
+    <text x="0" y="0" font-size="16">🔭</text>
+    <text x="24" y="-1" class="font-sans" font-size="15" font-weight="700" fill="#38bdf8">Starred topics</text>
+  </g>
+
+  <!-- Icons Wall Matrix (4 Rows x 14 Columns) -->
+  <g transform="translate(18, 38)">
+    <!-- Row 1 -->
+    <!-- 0: JS -->
+    <g transform="translate(0, 0)">
+      <rect width="36" height="36" rx="8" fill="#f7df1e" />
+      <text x="12" y="26" font-family="sans-serif" font-size="16" font-weight="900" fill="#000000">JS</text>
+    </g>
+    <!-- 1: C++ -->
+    <g transform="translate(48, 0)">
+      <rect width="36" height="36" rx="8" fill="#00599c" />
+      <circle cx="18" cy="18" r="12" fill="#004482" />
+      <text x="10" y="23" font-family="sans-serif" font-size="13" font-weight="900" fill="#ffffff">C++</text>
+    </g>
+    <!-- 2: Linux -->
+    <g transform="translate(96, 0)">
+      <rect width="36" height="36" rx="8" fill="#18181b" />
+      <!-- Tux penguin silhouette -->
+      <ellipse cx="18" cy="20" rx="9" ry="11" fill="#ffffff" />
+      <ellipse cx="18" cy="20" rx="6" ry="8" fill="#000000" />
+      <polygon points="18,14 15,17 21,17" fill="#f59e0b" />
+      <ellipse cx="14" cy="30" rx="4" ry="2" fill="#f59e0b" />
+      <ellipse cx="22" cy="30" rx="4" ry="2" fill="#f59e0b" />
+    </g>
+    <!-- 3: HTML5 -->
+    <g transform="translate(144, 0)">
+      <rect width="36" height="36" rx="8" fill="#e34f26" />
+      <text x="11" y="26" font-family="sans-serif" font-size="17" font-weight="900" fill="#ffffff">5</text>
+    </g>
+    <!-- 4: CSS3 -->
+    <g transform="translate(192, 0)">
+      <rect width="36" height="36" rx="8" fill="#1572b6" />
+      <text x="11" y="26" font-family="sans-serif" font-size="17" font-weight="900" fill="#ffffff">3</text>
+    </g>
+    <!-- 5: AWS -->
+    <g transform="translate(240, 0)">
+      <rect width="36" height="36" rx="8" fill="#232f3e" />
+      <text x="7" y="20" font-family="sans-serif" font-size="10" font-weight="900" fill="#ffffff">aws</text>
+      <path d="M 8,24 Q 18,30 28,24" fill="none" stroke="#ff9900" stroke-width="2" stroke-linecap="round" />
+    </g>
+    <!-- 6: Git -->
+    <g transform="translate(288, 0)">
+      <rect width="36" height="36" rx="8" fill="#f05032" />
+      <rect x="9" y="9" width="18" height="18" rx="2" transform="rotate(45 18 18)" fill="#ffffff" />
+      <circle cx="15" cy="18" r="2.2" fill="#f05032" />
+      <circle cx="21" cy="14" r="2.2" fill="#f05032" />
+      <line x1="15" y1="18" x2="21" y2="14" stroke="#f05032" stroke-width="1.6" />
+    </g>
+    <!-- 7: Docker -->
+    <g transform="translate(336, 0)">
+      <rect width="36" height="36" rx="8" fill="#2496ed" />
+      <rect x="11" y="14" width="4" height="4" fill="#ffffff" />
+      <rect x="16" y="14" width="4" height="4" fill="#ffffff" />
+      <rect x="21" y="14" width="4" height="4" fill="#ffffff" />
+      <rect x="16" y="9" width="4" height="4" fill="#ffffff" />
+      <path d="M 7,20 C 10,27 26,27 29,20 Z" fill="#ffffff" />
+    </g>
+    <!-- 8: Arduino -->
+    <g transform="translate(384, 0)">
+      <rect width="36" height="36" rx="8" fill="#00979d" />
+      <circle cx="13" cy="18" r="6" fill="none" stroke="#ffffff" stroke-width="1.8" />
+      <circle cx="23" cy="18" r="6" fill="none" stroke="#ffffff" stroke-width="1.8" />
+      <text x="11" y="20" font-family="sans-serif" font-size="7" font-weight="900" fill="#ffffff">-</text>
+      <text x="21" y="21" font-family="sans-serif" font-size="7" font-weight="900" fill="#ffffff">+</text>
+    </g>
+    <!-- 9: SQL / Database -->
+    <g transform="translate(432, 0)">
+      <rect width="36" height="36" rx="8" fill="#336791" />
+      <ellipse cx="18" cy="11" rx="10" ry="3.5" fill="#ffffff" />
+      <path d="M 8,11 L 8,18 C 8,20 12,22 18,22 C 24,22 28,20 28,18 L 28,11" fill="none" stroke="#ffffff" stroke-width="1.5" />
+      <path d="M 8,18 L 8,25 C 8,27 12,29 18,29 C 24,29 28,27 28,25 L 28,18" fill="none" stroke="#ffffff" stroke-width="1.5" />
+    </g>
+    <!-- 10: Bitcoin -->
+    <g transform="translate(480, 0)">
+      <rect width="36" height="36" rx="8" fill="#f7931a" />
+      <text x="12" y="25" font-family="sans-serif" font-size="18" font-weight="900" fill="#ffffff">₿</text>
+    </g>
+    <!-- 11: Chrome -->
+    <g transform="translate(528, 0)">
+      <rect width="36" height="36" rx="8" fill="#1e293b" />
+      <circle cx="18" cy="18" r="12" fill="#ea4335" />
+      <circle cx="18" cy="18" r="7" fill="#fbbc05" />
+      <circle cx="18" cy="18" r="5" fill="#4285f4" />
+    </g>
+    <!-- 12: Google -->
+    <g transform="translate(576, 0)">
+      <rect width="36" height="36" rx="8" fill="#ffffff" />
+      <text x="10" y="26" font-family="sans-serif" font-size="20" font-weight="900" fill="#4285f4">G</text>
+    </g>
+    <!-- 13: Azure -->
+    <g transform="translate(624, 0)">
+      <rect width="36" height="36" rx="8" fill="#0089d6" />
+      <polygon points="12,26 21,8 27,21 19,26" fill="#ffffff" />
+    </g>
+    <!-- 14: DevOps -->
+    <g transform="translate(672, 0)">
+      <rect width="36" height="36" rx="8" fill="#0284c7" />
+      <text x="8" y="24" font-family="sans-serif" font-size="18" fill="#ffffff">∞</text>
+    </g>
+    <!-- 15: Octocat -->
+    <g transform="translate(720, 0)">
+      <rect width="36" height="36" rx="8" fill="#24292e" />
+      <circle cx="18" cy="18" r="10" fill="#ffffff" />
+      <circle cx="18" cy="18" r="7" fill="#24292e" />
+      <path d="M 14,18 C 14,22 22,22 22,18 Z" fill="#ffffff" />
+    </g>
+    <!-- 16: Terminal -->
+    <g transform="translate(768, 0)">
+      <rect width="36" height="36" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="8" y="23" font-family="monospace" font-size="13" font-weight="900" fill="#38bdf8">&gt;_</text>
+    </g>
+    <!-- 17: GitHub -->
+    <g transform="translate(816, 0)">
+      <rect width="36" height="36" rx="8" fill="#181717" />
+      <circle cx="18" cy="18" r="11" fill="#ffffff" />
+      <path d="M 12,22 C 12,25 24,25 24,22 Z" fill="#181717" />
+    </g>
+    <!-- 18: Vue -->
+    <g transform="translate(864, 0)">
+      <rect width="36" height="36" rx="8" fill="#1e293b" />
+      <polygon points="8,10 18,26 28,10 23,10 18,18 13,10" fill="#42b883" />
+      <polygon points="13,10 18,18 23,10 19,10 18,12 17,10" fill="#35495e" />
+    </g>
+
+    <!-- Row 2 (y=44) -->
+    <!-- 19: Bash -->
+    <g transform="translate(0, 44)">
+      <rect width="36" height="36" rx="8" fill="#293138" />
+      <text x="6" y="22" font-family="monospace" font-size="8" font-weight="900" fill="#4eaa25">_BASH</text>
+    </g>
+    <!-- 20: Tor/Net -->
+    <g transform="translate(48, 44)">
+      <rect width="36" height="36" rx="8" fill="#59316b" />
+      <circle cx="18" cy="18" r="10" fill="none" stroke="#ffffff" stroke-width="2" />
+      <circle cx="18" cy="18" r="5" fill="none" stroke="#ffffff" stroke-width="2" />
+    </g>
+    <!-- 21: Raspberry Pi -->
+    <g transform="translate(96, 44)">
+      <rect width="36" height="36" rx="8" fill="#c51a4a" />
+      <circle cx="18" cy="20" r="7" fill="#ffffff" />
+      <polygon points="14,11 18,15 22,11" fill="#6cc04a" />
+    </g>
+    <!-- 22: Terminal -->
+    <g transform="translate(144, 44)">
+      <rect width="36" height="36" rx="8" fill="#000000" />
+      <text x="7" y="23" font-family="monospace" font-size="14" font-weight="900" fill="#22c55e">&gt;_</text>
+    </g>
+    <!-- 23: TypeScript -->
+    <g transform="translate(192, 44)">
+      <rect width="36" height="36" rx="8" fill="#3178c6" />
+      <text x="9" y="25" font-family="sans-serif" font-size="14" font-weight="900" fill="#ffffff">TS</text>
+    </g>
+    <!-- 24: iOS -->
+    <g transform="translate(240, 44)">
+      <rect width="36" height="36" rx="8" fill="#000000" />
+      <text x="8" y="23" font-family="sans-serif" font-size="12" font-weight="700" fill="#ffffff">iOS</text>
+    </g>
+    <!-- 25: Android -->
+    <g transform="translate(288, 44)">
+      <rect width="36" height="36" rx="8" fill="#3ddc84" />
+      <path d="M 12,20 C 12,14 24,14 24,20 Z" fill="#ffffff" />
+      <circle cx="15" cy="17" r="1" fill="#3ddc84" />
+      <circle cx="21" cy="17" r="1" fill="#3ddc84" />
+    </g>
+    <!-- 26: Cloudflare -->
+    <g transform="translate(336, 44)">
+      <rect width="36" height="36" rx="8" fill="#f38020" />
+      <ellipse cx="18" cy="20" rx="9" ry="6" fill="#ffffff" />
+      <circle cx="15" cy="16" r="4" fill="#ffffff" />
+    </g>
+    <!-- 27: Node.js -->
+    <g transform="translate(384, 44)">
+      <rect width="36" height="36" rx="8" fill="#339933" />
+      <polygon points="18,10 26,14 26,22 18,26 10,22 10,14" fill="#ffffff" />
+    </g>
+    <!-- 28: Windows -->
+    <g transform="translate(432, 44)">
+      <rect width="36" height="36" rx="8" fill="#0078d4" />
+      <rect x="10" y="10" width="7" height="7" fill="#ffffff" />
+      <rect x="19" y="10" width="7" height="7" fill="#ffffff" />
+      <rect x="10" y="19" width="7" height="7" fill="#ffffff" />
+      <rect x="19" y="19" width="7" height="7" fill="#ffffff" />
+    </g>
+    <!-- 29: Vite -->
+    <g transform="translate(480, 44)">
+      <rect width="36" height="36" rx="8" fill="#1e1e20" />
+      <polygon points="18,8 26,16 20,16 23,28 10,18 16,18" fill="#bd34fe" />
+    </g>
+    <!-- 30: Firefox -->
+    <g transform="translate(528, 44)">
+      <rect width="36" height="36" rx="8" fill="#ff7139" />
+      <circle cx="18" cy="18" r="9" fill="#00539f" />
+      <path d="M 12,24 C 10,16 24,14 26,24 Z" fill="#ffe900" />
+    </g>
+    <!-- 31: Angular -->
+    <g transform="translate(576, 44)">
+      <rect width="36" height="36" rx="8" fill="#dd0031" />
+      <polygon points="18,8 26,11 24,24 18,27 12,24 10,11" fill="#c3002f" />
+      <text x="13" y="22" font-family="sans-serif" font-size="12" font-weight="900" fill="#ffffff">A</text>
+    </g>
+    <!-- 32: npm -->
+    <g transform="translate(624, 44)">
+      <rect width="36" height="36" rx="8" fill="#cb3837" />
+      <text x="6" y="23" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff">npm</text>
+    </g>
+    <!-- 33: GraphQL -->
+    <g transform="translate(672, 44)">
+      <rect width="36" height="36" rx="8" fill="#e10098" />
+      <circle cx="18" cy="18" r="8" fill="none" stroke="#ffffff" stroke-width="1.8" />
+      <polygon points="18,10 25,22 11,22" fill="none" stroke="#ffffff" stroke-width="1.5" />
+    </g>
+    <!-- 34: Markdown -->
+    <g transform="translate(720, 44)">
+      <rect width="36" height="36" rx="8" fill="#000000" stroke="#334155" stroke-width="1" />
+      <text x="6" y="23" font-family="sans-serif" font-size="10" font-weight="900" fill="#ffffff">M↓</text>
+    </g>
+    <!-- 35: React -->
+    <g transform="translate(768, 44)">
+      <rect width="36" height="36" rx="8" fill="#20232a" />
+      <ellipse cx="18" cy="18" rx="10" ry="4" fill="none" stroke="#61dafb" stroke-width="1.5" />
+      <ellipse cx="18" cy="18" rx="10" ry="4" fill="none" stroke="#61dafb" stroke-width="1.5" transform="rotate(60 18 18)" />
+      <ellipse cx="18" cy="18" rx="10" ry="4" fill="none" stroke="#61dafb" stroke-width="1.5" transform="rotate(120 18 18)" />
+      <circle cx="18" cy="18" r="2" fill="#61dafb" />
+    </g>
+    <!-- 36: Express -->
+    <g transform="translate(816, 44)">
+      <rect width="36" height="36" rx="8" fill="#ffffff" />
+      <text x="3" y="22" font-family="sans-serif" font-size="7.5" font-weight="900" fill="#000000">express</text>
+    </g>
+    <!-- 37: Spring -->
+    <g transform="translate(864, 44)">
+      <rect width="36" height="36" rx="8" fill="#6db33f" />
+      <path d="M 12,24 C 12,14 24,12 24,12 C 24,12 22,24 12,24 Z" fill="#ffffff" />
+    </g>
+
+    <!-- Row 3 (y=88) -->
+    <!-- 38: Ruby -->
+    <g transform="translate(0, 88)">
+      <rect width="36" height="36" rx="8" fill="#cc342d" />
+      <polygon points="12,12 24,12 27,17 18,27 9,17" fill="#ffffff" />
+    </g>
+    <!-- 39: Next.js -->
+    <g transform="translate(48, 88)">
+      <rect width="36" height="36" rx="8" fill="#000000" stroke="#334155" stroke-width="1" />
+      <text x="11" y="25" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff">N</text>
+    </g>
+    <!-- 40: Polygon -->
+    <g transform="translate(96, 88)">
+      <rect width="36" height="36" rx="8" fill="#8247e5" />
+      <polygon points="18,10 26,15 26,23 18,28 10,23 10,15" fill="none" stroke="#ffffff" stroke-width="2" />
+    </g>
+    <!-- 41: Python -->
+    <g transform="translate(144, 88)">
+      <rect width="36" height="36" rx="8" fill="#3776ab" />
+      <path d="M 18,8 C 12,8 13,11 13,11 L 13,13 L 19,13 L 19,14 L 11,14 C 11,14 8,13 8,19 C 8,24 10,24 10,24 L 12,24 L 12,21 C 12,21 12,17 15,17 L 21,17 C 21,17 24,17 24,14 L 24,9 C 24,9 24.5,8 18,8 Z" fill="#ffd43b" />
+    </g>
+    <!-- 42: Apple -->
+    <g transform="translate(192, 88)">
+      <rect width="36" height="36" rx="8" fill="#000000" stroke="#334155" stroke-width="1" />
+      <circle cx="18" cy="20" r="7" fill="#ffffff" />
+      <ellipse cx="18" cy="11" rx="2" ry="3" fill="#ffffff" transform="rotate(30 18 11)" />
+    </g>
+    <!-- 43: PWA -->
+    <g transform="translate(240, 88)">
+      <rect width="36" height="36" rx="8" fill="#5a0fc8" />
+      <text x="5" y="23" font-family="sans-serif" font-size="9" font-weight="900" fill="#ffffff">PWA</text>
+    </g>
+    <!-- 44: Tailwind -->
+    <g transform="translate(288, 88)">
+      <rect width="36" height="36" rx="8" fill="#0f172a" />
+      <path d="M 11,18 C 13,13 17,13 18,16 C 19,19 23,19 25,16" fill="none" stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round" />
+      <path d="M 14,24 C 16,19 20,19 21,22 C 22,25 26,25 28,22" fill="none" stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round" />
+    </g>
+    <!-- 45: Redux -->
+    <g transform="translate(336, 88)">
+      <rect width="36" height="36" rx="8" fill="#764abc" />
+      <circle cx="18" cy="18" r="6" fill="none" stroke="#ffffff" stroke-width="2" />
+    </g>
+    <!-- 46: VS Code -->
+    <g transform="translate(384, 88)">
+      <rect width="36" height="36" rx="8" fill="#007acc" />
+      <path d="M 24,10 L 19,14 L 14,10 L 12,12 L 17,18 L 12,24 L 14,26 L 19,22 L 24,26 Z" fill="#ffffff" />
+    </g>
+    <!-- 47: GraphQL alt -->
+    <g transform="translate(432, 88)">
+      <rect width="36" height="36" rx="8" fill="#1f2937" />
+      <circle cx="18" cy="18" r="7" fill="#ec4899" />
+    </g>
+    <!-- 48: Slack/Matrix -->
+    <g transform="translate(480, 88)">
+      <rect width="36" height="36" rx="8" fill="#4a154b" />
+      <circle cx="14" cy="14" r="3" fill="#e01e5a" />
+      <circle cx="22" cy="14" r="3" fill="#36c5f0" />
+      <circle cx="14" cy="22" r="3" fill="#2eb67d" />
+      <circle cx="22" cy="22" r="3" fill="#ecb22e" />
+    </g>
+    <!-- 49: Figma -->
+    <g transform="translate(528, 88)">
+      <rect width="36" height="36" rx="8" fill="#000000" />
+      <circle cx="14" cy="14" r="3.5" fill="#f24e1e" />
+      <circle cx="22" cy="14" r="3.5" fill="#ff7262" />
+      <circle cx="14" cy="22" r="3.5" fill="#a259ff" />
+      <circle cx="22" cy="22" r="3.5" fill="#1abcfe" />
+    </g>
+  </g>
+</svg>
