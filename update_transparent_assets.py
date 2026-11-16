@@ -1,0 +1,522 @@
+import os
+import base64
+
+assets_dir = "/home/ark123/Documents/T-ARK/assets"
+os.makedirs(assets_dir, exist_ok=True)
+
+# Read the 3D model gif and encode to base64
+gif_path = os.path.join(assets_dir, "3d_model.gif")
+with open(gif_path, "rb") as f:
+    gif_b64 = base64.b64encode(f.read()).decode("ascii")
+
+# =========================================================================
+# 1. assets/01_top_section.svg (TRANSPARENT BACKGROUND)
+# =========================================================================
+top_section_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="logo-border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .font-mono { font-family: 'SF Mono', Consolas, 'Fira Code', 'Courier New', monospace; }
+  </style>
+
+  <!-- Left Column: Terminal & World Map -->
+  <g transform="translate(0, 0)">
+    <!-- 1. Terminal Celefetch Box (TRANSPARENT) -->
+    <rect width="330" height="285" rx="8" fill="none" stroke="#1e293b" stroke-width="1.2" />
+
+    <!-- Terminal Title Bar -->
+    <path d="M 0,8 C 0,3.5 3.5,0 8,0 L 322,0 C 326.5,0 330,3.5 330,8 L 330,28 L 0,28 Z" fill="#0d1424" fill-opacity="0.5" stroke="#1e293b" stroke-width="1" />
+    <circle cx="16" cy="14" r="4" fill="#ef4444" />
+    <circle cx="28" cy="14" r="4" fill="#f59e0b" />
+    <circle cx="40" cy="14" r="4" fill="#10b981" />
+    <text x="56" y="18" class="font-mono" font-size="11" font-weight="700" fill="#38bdf8">$ celefetch --user T-ARK</text>
+
+    <!-- T-ARK Logo Emblem Box -->
+    <g transform="translate(165, 88)">
+      <!-- Outer Hexagonal Cyber Shield -->
+      <polygon points="0,-48 44,-24 44,24 0,48 -44,24 -44,-24" fill="#0d1428" fill-opacity="0.4" stroke="url(#logo-border-grad)" stroke-width="2" filter="url(#soft-glow)" />
+      <polygon points="0,-42 38,-21 38,21 0,42 -38,21 -38,-21" fill="none" stroke="#a855f7" stroke-width="1.2" stroke-dasharray="6 3" />
+      
+      <!-- Tech Circuit Accents -->
+      <line x1="-22" y1="-32" x2="22" y2="-32" stroke="#38bdf8" stroke-width="1.5" />
+      <line x1="-22" y1="32" x2="22" y2="32" stroke="#38bdf8" stroke-width="1.5" />
+      <circle cx="-44" cy="0" r="2.5" fill="#38bdf8" />
+      <circle cx="44" cy="0" r="2.5" fill="#38bdf8" />
+
+      <!-- Stylized Monogram: T-ARK -->
+      <!-- 'T' -->
+      <path d="M -26,-15 L -6,-15 M -16,-15 L -16,15" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" />
+      <!-- '-' divider -->
+      <line x1="-6" y1="0" x2="-2" y2="0" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" />
+      <!-- 'A' -->
+      <path d="M 0,15 L 7,-15 L 14,15 M 2,5 L 12,5" stroke="#c084fc" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <!-- 'R' -->
+      <path d="M 17,15 L 17,-15 L 24,-15 C 28,-15 28,-4 24,-4 L 17,-4 M 22,-4 L 27,15" stroke="#38bdf8" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
+      <!-- 'K' -->
+      <path d="M 30,-15 L 30,15 M 39,-15 L 30,-2 M 34,-6 L 39,15" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" />
+    </g>
+
+    <!-- Optional external logo overlay if user drops in assets/logo.png -->
+    <image href="assets/logo.png" x="100" y="38" width="130" height="100" preserveAspectRatio="xMidYMid meet" opacity="0.95" />
+
+    <!-- Neofetch / Celefetch System Telemetry -->
+    <g class="font-mono" font-size="9" transform="translate(18, 155)">
+      <text y="0"><tspan fill="#38bdf8" font-weight="700">USER</tspan><tspan fill="#64748b"> ..... </tspan><tspan fill="#f3e8ff">T-ARK // Arshid Chandran</tspan></text>
+      <text y="15"><tspan fill="#38bdf8" font-weight="700">OS</tspan><tspan fill="#64748b"> ....... </tspan><tspan fill="#e2e8f0">Arch Linux x86_64</tspan></text>
+      <text y="30"><tspan fill="#38bdf8" font-weight="700">HOST</tspan><tspan fill="#64748b"> ..... </tspan><tspan fill="#e2e8f0">T-ARK Station</tspan></text>
+      <text y="45"><tspan fill="#38bdf8" font-weight="700">KERNEL</tspan><tspan fill="#64748b"> ... </tspan><tspan fill="#e2e8f0">6.12.1-ark-zen</tspan></text>
+      <text y="60"><tspan fill="#38bdf8" font-weight="700">UPTIME</tspan><tspan fill="#64748b"> ... </tspan><tspan fill="#e2e8f0">232 days (Active)</tspan></text>
+      <text y="75"><tspan fill="#38bdf8" font-weight="700">SHELL</tspan><tspan fill="#64748b"> .... </tspan><tspan fill="#e2e8f0">zsh 5.9 (cyber)</tspan></text>
+      <text y="90"><tspan fill="#38bdf8" font-weight="700">FOCUS</tspan><tspan fill="#64748b"> .... </tspan><tspan fill="#c084fc">Data Science &amp; Systems</tspan></text>
+      
+      <!-- Palette blocks -->
+      <g transform="translate(0, 104)">
+        <rect x="0" y="0" width="12" height="9" rx="2" fill="#ef4444" />
+        <rect x="16" y="0" width="12" height="9" rx="2" fill="#f59e0b" />
+        <rect x="32" y="0" width="12" height="9" rx="2" fill="#10b981" />
+        <rect x="48" y="0" width="12" height="9" rx="2" fill="#38bdf8" />
+        <rect x="64" y="0" width="12" height="9" rx="2" fill="#a855f7" />
+        <rect x="80" y="0" width="12" height="9" rx="2" fill="#f43f5e" />
+        <rect x="96" y="0" width="12" height="9" rx="2" fill="#f8fafc" />
+      </g>
+    </g>
+
+    <!-- 2. World Map Box (TRANSPARENT) -->
+    <g transform="translate(0, 298)">
+      <rect width="330" height="180" rx="8" fill="none" stroke="#1e293b" stroke-width="1.2" />
+
+      <!-- World Map Outline (Accurate Vector Silhouette) -->
+      <g transform="translate(15, 18)" fill="#e2e8f0" opacity="0.9">
+        <!-- North America -->
+        <path d="M 28,15 L 36,12 L 48,10 L 68,14 L 80,24 L 84,36 L 76,46 L 70,58 L 62,64 L 54,60 L 50,48 L 40,46 L 30,34 L 20,26 Z" />
+        <path d="M 44,58 L 52,66 L 56,76 L 62,84 L 56,92 L 50,88 L 46,74 Z" />
+        <path d="M 62,8 L 82,6 L 88,14 L 78,18 Z" />
+
+        <!-- South America -->
+        <path d="M 66,95 L 76,96 L 86,108 L 84,124 L 78,140 L 72,148 L 68,136 L 64,116 L 62,104 Z" />
+
+        <!-- Europe -->
+        <path d="M 128,24 L 140,22 L 148,28 L 146,38 L 138,44 L 130,46 L 126,38 L 122,34 Z" />
+        <path d="M 120,20 L 124,14 L 128,18 L 124,24 Z" />
+        <path d="M 136,10 L 144,8 L 148,16 L 142,22 Z" />
+
+        <!-- Africa -->
+        <path d="M 126,50 L 144,48 L 158,56 L 164,74 L 158,94 L 148,114 L 138,118 L 132,106 L 124,84 L 122,66 Z" />
+        <path d="M 166,96 L 170,108 L 166,112 L 164,102 Z" />
+
+        <!-- Asia -->
+        <path d="M 152,20 L 180,18 L 210,22 L 240,28 L 255,42 L 246,58 L 228,62 L 214,54 L 202,46 L 188,48 L 174,44 L 158,34 Z" />
+        <path d="M 218,60 L 230,68 L 242,76 L 232,84 L 222,78 L 216,68 Z" />
+        <!-- India Subcontinent -->
+        <path d="M 188,52 L 204,54 L 208,68 L 198,84 L 188,72 Z" fill="#ffffff" />
+        <circle cx="196" cy="78" r="4" fill="#38bdf8" />
+
+        <!-- Australia & Oceania -->
+        <path d="M 240,102 L 260,98 L 272,108 L 268,124 L 254,128 L 242,122 L 236,110 Z" />
+        <path d="M 276,128 L 282,138 L 278,142 Z" />
+      </g>
+
+      <!-- Kerala Radar Ping Effect -->
+      <g transform="translate(211, 96)">
+        <circle cx="0" cy="0" r="10" fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.6">
+          <animate attributeName="r" values="4;14" dur="2s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.8;0" dur="2s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="0" cy="0" r="3" fill="#38bdf8" filter="url(#soft-glow)" />
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Column: // WHO I AM (TRANSPARENT) -->
+  <g transform="translate(350, 0)">
+    <!-- Header -->
+    <text x="2" y="18" class="font-sans" font-size="15" font-weight="800" fill="#c084fc" letter-spacing="1.5">// WHO I AM</text>
+
+    <!-- macOS Code Window -->
+    <g transform="translate(0, 30)">
+      <rect width="590" height="448" rx="10" fill="none" stroke="#381d63" stroke-width="1.2" />
+
+      <!-- Top window bar -->
+      <path d="M 0,10 C 0,4.5 4.5,0 10,0 L 580,0 C 585.5,0 590,4.5 590,10 L 590,32 L 0,32 Z" fill="#1b0e36" fill-opacity="0.5" stroke="#381d63" stroke-width="1" />
+      <circle cx="18" cy="16" r="5" fill="#ef4444" />
+      <circle cx="34" cy="16" r="5" fill="#f59e0b" />
+      <circle cx="50" cy="16" r="5" fill="#10b981" />
+      <text x="295" y="20" class="font-sans" font-size="12" fill="#a78bfa" text-anchor="middle" font-weight="600">developer.py</text>
+
+      <!-- Code lines with exact formatting -->
+      <g class="font-mono" font-size="11.5" transform="translate(20, 56)">
+        <text y="0"><tspan fill="#c084fc" font-weight="700">class</tspan> <tspan fill="#fde047">Developer</tspan></text>
+        <text y="18"><tspan fill="#c084fc" font-weight="700">def</tspan> <tspan fill="#60a5fa">__init__</tspan> <tspan fill="#c084fc">self</tspan></text>
+        <text y="36"><tspan fill="#e9d5ff">self.name</tspan> <tspan fill="#86efac">"Arshid Chandran P K"</tspan></text>
+        <text y="54"><tspan fill="#e9d5ff">self.location</tspan> <tspan fill="#86efac">"Kerala, India 🇮🇳"</tspan></text>
+        <text y="72"><tspan fill="#e9d5ff">self.degree</tspan> <tspan fill="#86efac">"B.Tech - Computer Science</tspan></text>
+        <text y="90"><tspan fill="#86efac">Engineering (Data Science)"</tspan></text>
+        <text y="108"><tspan fill="#e9d5ff">self.role</tspan> <tspan fill="#86efac">"Aspiring Data Scientist &amp; Dev"</tspan></text>
+        
+        <text y="132"><tspan fill="#e9d5ff">self.stack</tspan></text>
+        <text y="150"><tspan fill="#c084fc">"languages"</tspan> <tspan fill="#fde047">"Python"</tspan> <tspan fill="#fde047">"C"</tspan> <tspan fill="#fde047">"C++"</tspan> <tspan fill="#fde047">"JS"</tspan></text>
+        <text y="168"><tspan fill="#c084fc">"web"</tspan> <tspan fill="#fde047">"HTML5"</tspan> <tspan fill="#fde047">"CSS3"</tspan> <tspan fill="#fde047">"Responsive"</tspan></text>
+        <text y="186"><tspan fill="#c084fc">"data_science"</tspan> <tspan fill="#fde047">"NumPy"</tspan> <tspan fill="#fde047">"Pandas"</tspan> <tspan fill="#fde047">"Scikit"</tspan></text>
+
+        <text y="214"><tspan fill="#e9d5ff">self.currently_learning</tspan></text>
+        <text y="232"><tspan fill="#86efac">"Machine Learning"</tspan> <tspan fill="#86efac">"Cybersecurity"</tspan></text>
+        <text y="250"><tspan fill="#86efac">"Advanced Data Visualization"</tspan></text>
+
+        <text y="278"><tspan fill="#e9d5ff">self.interests</tspan> <tspan fill="#fde047">"Data Science"</tspan> <tspan fill="#fde047">"AI"</tspan></text>
+        <text y="296"><tspan fill="#fde047">"Cybersecurity"</tspan> <tspan fill="#fde047">"Photography"</tspan> <tspan fill="#fde047">"Design"</tspan></text>
+
+        <text y="318"><tspan fill="#e9d5ff">self.languages_spoken</tspan></text>
+        <text y="336"><tspan fill="#86efac">"English"</tspan> <tspan fill="#86efac">"Malayalam"</tspan> <tspan fill="#86efac">"Hindi"</tspan> <tspan fill="#86efac">"Tamil"</tspan></text>
+
+        <text y="358"><tspan fill="#e9d5ff">self.fun_fact</tspan> <tspan fill="#86efac">"I love debugging &amp; cameras 📷"</tspan></text>
+
+        <text y="380"><tspan fill="#c084fc" font-weight="700">def</tspan> <tspan fill="#60a5fa">motto</tspan> <tspan fill="#c084fc">self</tspan></text>
+        <text y="398"><tspan fill="#c084fc" font-weight="700">return</tspan> <tspan fill="#fde047">"Stay curious. Keep building."</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>'''
+
+with open(os.path.join(assets_dir, "01_top_section.svg"), "w") as f:
+    f.write(top_section_svg)
+print("Updated 01_top_section.svg (Transparent)")
+
+# =========================================================================
+# 2. assets/02_starred_topics.svg (TRANSPARENT BACKGROUND)
+# =========================================================================
+with open(os.path.join(assets_dir, "02_starred_topics.svg"), "r") as f:
+    content = f.read()
+# Replace background fill with transparent
+content = content.replace('fill="url(#topic-bg)"', 'fill="none"')
+with open(os.path.join(assets_dir, "02_starred_topics.svg"), "w") as f:
+    f.write(content)
+print("Updated 02_starred_topics.svg (Transparent)")
+
+# =========================================================================
+# 3. assets/03_telemetry_chart.svg (TRANSPARENT BACKGROUND)
+# =========================================================================
+with open(os.path.join(assets_dir, "03_telemetry_chart.svg"), "r") as f:
+    content = f.read()
+content = content.replace('fill="url(#chart-bg)"', 'fill="none"')
+with open(os.path.join(assets_dir, "03_telemetry_chart.svg"), "w") as f:
+    f.write(content)
+print("Updated 03_telemetry_chart.svg (Transparent)")
+
+# =========================================================================
+# 4. assets/04_metrics_and_art.svg (TRANSPARENT BACKGROUND + 3D MODEL GIF)
+# =========================================================================
+metrics_and_art_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 250" width="100%" height="100%">
+  <defs>
+    <filter id="green-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }}
+    .radar-label {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 10px; fill: #94a3b8; text-anchor: middle; font-weight: 600; }}
+  </style>
+
+  <!-- 1. Left Card: Activity Radar Chart (TRANSPARENT) -->
+  <g transform="translate(0, 0)">
+    <rect width="300" height="250" rx="8" fill="none" stroke="#1e293b" stroke-width="1.2" />
+
+    <!-- Spider Chart Grid Axes -->
+    <g transform="translate(150, 130)">
+      <polygon points="0,-75 75,0 0,75 -75,0" fill="none" stroke="#1e293b" stroke-width="1" />
+      <polygon points="0,-50 50,0 0,50 -50,0" fill="none" stroke="#1e293b" stroke-width="1" />
+      <polygon points="0,-25 25,0 0,25 -25,0" fill="none" stroke="#1e293b" stroke-width="1" />
+      <line x1="0" y1="-80" x2="0" y2="80" stroke="#334155" stroke-width="1" />
+      <line x1="-80" y1="0" x2="80" y2="0" stroke="#334155" stroke-width="1" />
+
+      <!-- Green Radar Metric Polygon -->
+      <polygon points="0,-38 18,0 0,45 -72,0" fill="#22c55e" fill-opacity="0.45" stroke="#4ade80" stroke-width="2" filter="url(#green-glow)" />
+
+      <!-- Vertices -->
+      <circle cx="0" cy="-38" r="3" fill="#ffffff" />
+      <circle cx="18" cy="0" r="3" fill="#ffffff" />
+      <circle cx="0" cy="45" r="3" fill="#ffffff" />
+      <circle cx="-72" cy="0" r="3" fill="#ffffff" />
+    </g>
+
+    <!-- Labels -->
+    <text x="150" y="32" class="radar-label"><tspan font-weight="700" fill="#e2e8f0">21%</tspan><tspan dy="12" x="150">Code Review</tspan></text>
+    <text x="252" y="128" class="radar-label"><tspan font-weight="700" fill="#e2e8f0">7%</tspan><tspan dy="12" x="252">Issues</tspan></text>
+    <text x="150" y="222" class="radar-label"><tspan font-weight="700" fill="#e2e8f0">25%</tspan><tspan dy="12" x="150">Pull requests</tspan></text>
+    <text x="45" y="128" class="radar-label"><tspan font-weight="700" fill="#e2e8f0">47%</tspan><tspan dy="12" x="45">Commits</tspan></text>
+  </g>
+
+  <!-- 2. Middle Card: 3D MODEL ANIMATED (TRANSPARENT + EMBEDDED GIF) -->
+  <g transform="translate(320, 0)">
+    <rect width="300" height="250" rx="8" fill="none" stroke="#1e293b" stroke-width="1.2" />
+
+    <!-- Animated 3D Model Embedded directly via Base64 & Relative Link -->
+    <image href="data:image/gif;base64,{gif_b64}" x="15" y="15" width="270" height="220" preserveAspectRatio="xMidYMid meet" />
+  </g>
+
+  <!-- 3. Right Card: 3D Isometric Contribution Calendar (TRANSPARENT) -->
+  <g transform="translate(640, 0)">
+    <rect width="300" height="250" rx="8" fill="none" stroke="#1e293b" stroke-width="1.2" />
+
+    <!-- Top Label -->
+    <g transform="translate(18, 20)">
+      <circle cx="4" cy="4" r="3" fill="#38bdf8" />
+      <text x="14" y="8" class="font-sans" font-size="11" font-weight="600" fill="#94a3b8">Full year calendar</text>
+    </g>
+
+    <!-- Small Stats Telemetry -->
+    <g class="font-sans" font-size="9.5" fill="#94a3b8" transform="translate(170, 48)">
+      <text y="0"><tspan fill="#38bdf8">✔</tspan> Current streak: 8 days</text>
+      <text y="14"><tspan fill="#38bdf8">✔</tspan> Longest streak: 232 days</text>
+      <text y="28"><tspan fill="#38bdf8">✔</tspan> Highest in a day: 19</text>
+      <text y="42"><tspan fill="#38bdf8">✔</tspan> Average per day: 2.1</text>
+    </g>
+
+    <!-- 3D Extruded Isometric Contribution Calendar Strip -->
+    <g transform="translate(45, 95)">
+      <!-- Base grid path -->
+      <polygon points="0,40 180,-30 220,-15 40,55" fill="none" stroke="#1e293b" stroke-width="1" />
+
+      <!-- Columns of 3D cubes -->
+      <g transform="translate(10, 32)">
+        <polygon points="0,0 8,-4 16,0 8,4" fill="#4ade80" />
+        <polygon points="0,0 8,4 8,14 0,10" fill="#22c55e" />
+        <polygon points="8,4 16,0 16,10 8,14" fill="#15803d" />
+      </g>
+      <g transform="translate(18, 24)">
+        <polygon points="0,0 8,-4 16,0 8,4" fill="#86efac" />
+        <polygon points="0,0 8,4 8,24 0,20" fill="#4ade80" />
+        <polygon points="8,4 16,0 16,20 8,24" fill="#16a34a" />
+      </g>
+      <g transform="translate(26, 16)">
+        <polygon points="0,0 8,-4 16,0 8,4" fill="#22c55e" />
+        <polygon points="0,0 8,4 8,10 0,6" fill="#16a34a" />
+        <polygon points="8,4 16,0 16,6 8,10" fill="#15803d" />
+      </g>
+      <g transform="translate(34, 8)">
+        <polygon points="0,0 8,-4 16,0 8,4" fill="#4ade80" />
+        <polygon points="0,0 8,4 8,18 0,14" fill="#22c55e" />
+        <polygon points="8,4 16,0 16,14 8,18" fill="#16a34a" />
+      </g>
+
+      <g transform="translate(50, -2)">
+        <polygon points="0,0 8,-4 16,0 8,4" fill="#86efac" />
+        <polygon points="0,0 8,4 8,26 0,22" fill="#4ade80" />
+        <polygon points="8,4 16,0 16,22 8,26" fill="#16a34a" />
+      </g>
+      <g transform="translate(68, -12)">
+        <polygon points="0,0 8,-4 16,0 8,4" fill="#22c55e" />
+        <polygon points="0,0 8,4 8,12 0,8" fill="#16a34a" />
+        <polygon points="8,4 16,0 16,8 8,12" fill="#15803d" />
+      </g>
+      <g transform="translate(86, -22)">
+        <polygon points="0,0 8,-4 16,0 8,4" fill="#4ade80" />
+        <polygon points="0,0 8,4 8,16 0,12" fill="#22c55e" />
+        <polygon points="8,4 16,0 16,12 8,16" fill="#16a34a" />
+      </g>
+      <g transform="translate(104, -32)">
+        <polygon points="0,0 8,-4 16,0 8,4" fill="#86efac" />
+        <polygon points="0,0 8,4 8,20 0,16" fill="#4ade80" />
+        <polygon points="8,4 16,0 16,16 8,20" fill="#16a34a" />
+      </g>
+      <g transform="translate(122, -42)">
+        <polygon points="0,0 8,-4 16,0 8,4" fill="#22c55e" />
+        <polygon points="0,0 8,4 8,10 0,6" fill="#16a34a" />
+        <polygon points="8,4 16,0 16,6 8,10" fill="#15803d" />
+      </g>
+
+      <!-- Second Row of Cubes alongside -->
+      <g transform="translate(30, 48)">
+        <polygon points="0,0 8,-4 16,0 8,4" fill="#16a34a" />
+        <polygon points="0,0 8,4 8,8 0,4" fill="#15803d" />
+        <polygon points="8,4 16,0 16,4 8,8" fill="#14532d" />
+      </g>
+      <g transform="translate(70, 24)">
+        <polygon points="0,0 8,-4 16,0 8,4" fill="#4ade80" />
+        <polygon points="0,0 8,4 8,14 0,10" fill="#22c55e" />
+        <polygon points="8,4 16,0 16,10 8,14" fill="#16a34a" />
+      </g>
+      <g transform="translate(140, -18)">
+        <polygon points="0,0 8,-4 16,0 8,4" fill="#86efac" />
+        <polygon points="0,0 8,4 8,16 0,12" fill="#4ade80" />
+        <polygon points="8,4 16,0 16,12 8,16" fill="#16a34a" />
+      </g>
+      <g transform="translate(170, -32)">
+        <polygon points="0,0 8,-4 16,0 8,4" fill="#22c55e" />
+        <polygon points="0,0 8,4 8,8 0,4" fill="#16a34a" />
+        <polygon points="8,4 16,0 16,4 8,8" fill="#15803d" />
+      </g>
+    </g>
+
+    <!-- Bottom Label -->
+    <g transform="translate(18, 225)">
+      <circle cx="4" cy="4" r="3" fill="#64748b" />
+      <text x="14" y="8" class="font-sans" font-size="11" fill="#64748b">Half year calendar</text>
+    </g>
+  </g>
+</svg>'''
+
+with open(os.path.join(assets_dir, "04_metrics_and_art.svg"), "w") as f:
+    f.write(metrics_and_art_svg)
+print("Updated 04_metrics_and_art.svg (Transparent + 3D Model)")
+
+# =========================================================================
+# 5. assets/05_featured_projects.svg (TRANSPARENT BACKGROUND)
+# =========================================================================
+with open(os.path.join(assets_dir, "05_featured_projects.svg"), "r") as f:
+    content = f.read()
+content = content.replace('fill="url(#card-bg)"', 'fill="none"')
+content = content.replace('fill="url(#circuit)"', 'fill="none"')
+with open(os.path.join(assets_dir, "05_featured_projects.svg"), "w") as f:
+    f.write(content)
+print("Updated 05_featured_projects.svg (Transparent)")
+
+# Generate individual card SVGs for section 4 (for seamless HTML table embedding if needed)
+radar_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 250" width="100%" height="100%">
+  <defs>
+    <filter id="green-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .radar-label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 10px; fill: #94a3b8; text-anchor: middle; font-weight: 600; }
+  </style>
+  <rect width="300" height="250" rx="8" fill="none" stroke="#1e293b" stroke-width="1.2" />
+  <g transform="translate(150, 130)">
+    <polygon points="0,-75 75,0 0,75 -75,0" fill="none" stroke="#1e293b" stroke-width="1" />
+    <polygon points="0,-50 50,0 0,50 -50,0" fill="none" stroke="#1e293b" stroke-width="1" />
+    <polygon points="0,-25 25,0 0,25 -25,0" fill="none" stroke="#1e293b" stroke-width="1" />
+    <line x1="0" y1="-80" x2="0" y2="80" stroke="#334155" stroke-width="1" />
+    <line x1="-80" y1="0" x2="80" y2="0" stroke="#334155" stroke-width="1" />
+    <polygon points="0,-38 18,0 0,45 -72,0" fill="#22c55e" fill-opacity="0.45" stroke="#4ade80" stroke-width="2" filter="url(#green-glow)" />
+    <circle cx="0" cy="-38" r="3" fill="#ffffff" />
+    <circle cx="18" cy="0" r="3" fill="#ffffff" />
+    <circle cx="0" cy="45" r="3" fill="#ffffff" />
+    <circle cx="-72" cy="0" r="3" fill="#ffffff" />
+  </g>
+  <text x="150" y="32" class="radar-label"><tspan font-weight="700" fill="#e2e8f0">21%</tspan><tspan dy="12" x="150">Code Review</tspan></text>
+  <text x="252" y="128" class="radar-label"><tspan font-weight="700" fill="#e2e8f0">7%</tspan><tspan dy="12" x="252">Issues</tspan></text>
+  <text x="150" y="222" class="radar-label"><tspan font-weight="700" fill="#e2e8f0">25%</tspan><tspan dy="12" x="150">Pull requests</tspan></text>
+  <text x="45" y="128" class="radar-label"><tspan font-weight="700" fill="#e2e8f0">47%</tspan><tspan dy="12" x="45">Commits</tspan></text>
+</svg>'''
+
+with open(os.path.join(assets_dir, "04_radar.svg"), "w") as f:
+    f.write(radar_svg)
+
+calendar_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 250" width="100%" height="100%">
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+  </style>
+  <rect width="300" height="250" rx="8" fill="none" stroke="#1e293b" stroke-width="1.2" />
+  <g transform="translate(18, 20)">
+    <circle cx="4" cy="4" r="3" fill="#38bdf8" />
+    <text x="14" y="8" class="font-sans" font-size="11" font-weight="600" fill="#94a3b8">Full year calendar</text>
+  </g>
+  <g class="font-sans" font-size="9.5" fill="#94a3b8" transform="translate(170, 48)">
+    <text y="0"><tspan fill="#38bdf8">✔</tspan> Current streak: 8 days</text>
+    <text y="14"><tspan fill="#38bdf8">✔</tspan> Longest streak: 232 days</text>
+    <text y="28"><tspan fill="#38bdf8">✔</tspan> Highest in a day: 19</text>
+    <text y="42"><tspan fill="#38bdf8">✔</tspan> Average per day: 2.1</text>
+  </g>
+  <g transform="translate(45, 95)">
+    <polygon points="0,40 180,-30 220,-15 40,55" fill="none" stroke="#1e293b" stroke-width="1" />
+    <g transform="translate(10, 32)">
+      <polygon points="0,0 8,-4 16,0 8,4" fill="#4ade80" />
+      <polygon points="0,0 8,4 8,14 0,10" fill="#22c55e" />
+      <polygon points="8,4 16,0 16,10 8,14" fill="#15803d" />
+    </g>
+    <g transform="translate(18, 24)">
+      <polygon points="0,0 8,-4 16,0 8,4" fill="#86efac" />
+      <polygon points="0,0 8,4 8,24 0,20" fill="#4ade80" />
+      <polygon points="8,4 16,0 16,20 8,24" fill="#16a34a" />
+    </g>
+    <g transform="translate(26, 16)">
+      <polygon points="0,0 8,-4 16,0 8,4" fill="#22c55e" />
+      <polygon points="0,0 8,4 8,10 0,6" fill="#16a34a" />
+      <polygon points="8,4 16,0 16,6 8,10" fill="#15803d" />
+    </g>
+    <g transform="translate(34, 8)">
+      <polygon points="0,0 8,-4 16,0 8,4" fill="#4ade80" />
+      <polygon points="0,0 8,4 8,18 0,14" fill="#22c55e" />
+      <polygon points="8,4 16,0 16,14 8,18" fill="#16a34a" />
+    </g>
+    <g transform="translate(50, -2)">
+      <polygon points="0,0 8,-4 16,0 8,4" fill="#86efac" />
+      <polygon points="0,0 8,4 8,26 0,22" fill="#4ade80" />
+      <polygon points="8,4 16,0 16,22 8,26" fill="#16a34a" />
+    </g>
+    <g transform="translate(68, -12)">
+      <polygon points="0,0 8,-4 16,0 8,4" fill="#22c55e" />
+      <polygon points="0,0 8,4 8,12 0,8" fill="#16a34a" />
+      <polygon points="8,4 16,0 16,8 8,12" fill="#15803d" />
+    </g>
+    <g transform="translate(86, -22)">
+      <polygon points="0,0 8,-4 16,0 8,4" fill="#4ade80" />
+      <polygon points="0,0 8,4 8,16 0,12" fill="#22c55e" />
+      <polygon points="8,4 16,0 16,12 8,16" fill="#16a34a" />
+    </g>
+    <g transform="translate(104, -32)">
+      <polygon points="0,0 8,-4 16,0 8,4" fill="#86efac" />
+      <polygon points="0,0 8,4 8,20 0,16" fill="#4ade80" />
+      <polygon points="8,4 16,0 16,16 8,20" fill="#16a34a" />
+    </g>
+    <g transform="translate(122, -42)">
+      <polygon points="0,0 8,-4 16,0 8,4" fill="#22c55e" />
+      <polygon points="0,0 8,4 8,10 0,6" fill="#16a34a" />
+      <polygon points="8,4 16,0 16,6 8,10" fill="#15803d" />
+    </g>
+    <g transform="translate(30, 48)">
+      <polygon points="0,0 8,-4 16,0 8,4" fill="#16a34a" />
+      <polygon points="0,0 8,4 8,8 0,4" fill="#15803d" />
+      <polygon points="8,4 16,0 16,4 8,8" fill="#14532d" />
+    </g>
+    <g transform="translate(70, 24)">
+      <polygon points="0,0 8,-4 16,0 8,4" fill="#4ade80" />
+      <polygon points="0,0 8,4 8,14 0,10" fill="#22c55e" />
+      <polygon points="8,4 16,0 16,10 8,14" fill="#16a34a" />
+    </g>
+    <g transform="translate(140, -18)">
+      <polygon points="0,0 8,-4 16,0 8,4" fill="#86efac" />
+      <polygon points="0,0 8,4 8,16 0,12" fill="#4ade80" />
+      <polygon points="8,4 16,0 16,12 8,16" fill="#16a34a" />
+    </g>
+    <g transform="translate(170, -32)">
+      <polygon points="0,0 8,-4 16,0 8,4" fill="#22c55e" />
+      <polygon points="0,0 8,4 8,8 0,4" fill="#16a34a" />
+      <polygon points="8,4 16,0 16,4 8,8" fill="#15803d" />
+    </g>
+  </g>
+  <g transform="translate(18, 225)">
+    <circle cx="4" cy="4" r="3" fill="#64748b" />
+    <text x="14" y="8" class="font-sans" font-size="11" fill="#64748b">Half year calendar</text>
+  </g>
+</svg>'''
+
+with open(os.path.join(assets_dir, "04_calendar.svg"), "w") as f:
+    f.write(calendar_svg)
+
+print("All transparent assets generated successfully.")

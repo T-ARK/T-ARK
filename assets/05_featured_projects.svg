@@ -31,8 +31,8 @@
   <g transform="translate(0, 38)">
     <!-- Card 1: Personal Portfolio Website -->
     <g transform="translate(0, 0)">
-      <rect width="220" height="200" rx="12" fill="url(#card-bg)" stroke="url(#purple-border)" stroke-width="1.2" />
-      <rect width="220" height="200" rx="12" fill="url(#circuit)" />
+      <rect width="220" height="200" rx="12" fill="none" stroke="url(#purple-border)" stroke-width="1.2" />
+      <rect width="220" height="200" rx="12" fill="none" />
 
       <!-- Top Icon: Laptop -->
       <g transform="translate(18, 16)">
@@ -67,8 +67,8 @@
 
     <!-- Card 2: Data Analysis & Visualization Toolkit -->
     <g transform="translate(240, 0)">
-      <rect width="220" height="200" rx="12" fill="url(#card-bg)" stroke="url(#purple-border)" stroke-width="1.2" />
-      <rect width="220" height="200" rx="12" fill="url(#circuit)" />
+      <rect width="220" height="200" rx="12" fill="none" stroke="url(#purple-border)" stroke-width="1.2" />
+      <rect width="220" height="200" rx="12" fill="none" />
 
       <!-- Top Icon: EDA / Analytics -->
       <g transform="translate(18, 16)">
@@ -101,8 +101,8 @@
 
     <!-- Card 3: Smart Banking System -->
     <g transform="translate(480, 0)">
-      <rect width="220" height="200" rx="12" fill="url(#card-bg)" stroke="url(#purple-border)" stroke-width="1.2" />
-      <rect width="220" height="200" rx="12" fill="url(#circuit)" />
+      <rect width="220" height="200" rx="12" fill="none" stroke="url(#purple-border)" stroke-width="1.2" />
+      <rect width="220" height="200" rx="12" fill="none" />
 
       <!-- Top Icon: Bank / Pillars -->
       <g transform="translate(18, 16)">
@@ -143,8 +143,8 @@
 
     <!-- Card 4: SQL Migrator -->
     <g transform="translate(720, 0)">
-      <rect width="220" height="200" rx="12" fill="url(#card-bg)" stroke="url(#purple-border)" stroke-width="1.2" />
-      <rect width="220" height="200" rx="12" fill="url(#circuit)" />
+      <rect width="220" height="200" rx="12" fill="none" stroke="url(#purple-border)" stroke-width="1.2" />
+      <rect width="220" height="200" rx="12" fill="none" />
 
       <!-- Top Icon: Database -->
       <g transform="translate(18, 16)">

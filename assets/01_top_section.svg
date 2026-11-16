@@ -1,13 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 480" width="100%" height="100%">
   <defs>
-    <linearGradient id="card-dark" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#090d18" />
-      <stop offset="100%" stop-color="#050811" />
-    </linearGradient>
-
-    <linearGradient id="editor-dark" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#140b2a" />
-      <stop offset="100%" stop-color="#0a0518" />
+    <linearGradient id="logo-border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#38bdf8" />
     </linearGradient>
 
     <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
@@ -26,11 +22,11 @@
 
   <!-- Left Column: Terminal & World Map -->
   <g transform="translate(0, 0)">
-    <!-- 1. Terminal Celefetch Box -->
-    <rect width="330" height="285" rx="8" fill="url(#card-dark)" stroke="#1e293b" stroke-width="1.2" />
+    <!-- 1. Terminal Celefetch Box (TRANSPARENT) -->
+    <rect width="330" height="285" rx="8" fill="none" stroke="#1e293b" stroke-width="1.2" />
 
     <!-- Terminal Title Bar -->
-    <path d="M 0,8 C 0,3.5 3.5,0 8,0 L 322,0 C 326.5,0 330,3.5 330,8 L 330,28 L 0,28 Z" fill="#0d1424" />
+    <path d="M 0,8 C 0,3.5 3.5,0 8,0 L 322,0 C 326.5,0 330,3.5 330,8 L 330,28 L 0,28 Z" fill="#0d1424" fill-opacity="0.5" stroke="#1e293b" stroke-width="1" />
     <circle cx="16" cy="14" r="4" fill="#ef4444" />
     <circle cx="28" cy="14" r="4" fill="#f59e0b" />
     <circle cx="40" cy="14" r="4" fill="#10b981" />
@@ -39,7 +35,7 @@
     <!-- T-ARK Logo Emblem Box -->
     <g transform="translate(165, 88)">
       <!-- Outer Hexagonal Cyber Shield -->
-      <polygon points="0,-48 44,-24 44,24 0,48 -44,24 -44,-24" fill="#0d1428" stroke="url(#logo-border-grad)" stroke-width="2" filter="url(#soft-glow)" />
+      <polygon points="0,-48 44,-24 44,24 0,48 -44,24 -44,-24" fill="#0d1428" fill-opacity="0.4" stroke="url(#logo-border-grad)" stroke-width="2" filter="url(#soft-glow)" />
       <polygon points="0,-42 38,-21 38,21 0,42 -38,21 -38,-21" fill="none" stroke="#a855f7" stroke-width="1.2" stroke-dasharray="6 3" />
       
       <!-- Tech Circuit Accents -->
@@ -61,7 +57,7 @@
       <path d="M 30,-15 L 30,15 M 39,-15 L 30,-2 M 34,-6 L 39,15" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" />
     </g>
 
-    <!-- Optional external logo image overlay (renders automatically if assets/logo.png exists) -->
+    <!-- Optional external logo overlay if user drops in assets/logo.png -->
     <image href="assets/logo.png" x="100" y="38" width="130" height="100" preserveAspectRatio="xMidYMid meet" opacity="0.95" />
 
     <!-- Neofetch / Celefetch System Telemetry -->
@@ -86,35 +82,35 @@
       </g>
     </g>
 
-    <!-- 2. World Map Box -->
+    <!-- 2. World Map Box (TRANSPARENT) -->
     <g transform="translate(0, 298)">
-      <rect width="330" height="180" rx="8" fill="url(#card-dark)" stroke="#1e293b" stroke-width="1.2" />
+      <rect width="330" height="180" rx="8" fill="none" stroke="#1e293b" stroke-width="1.2" />
 
       <!-- World Map Outline (Accurate Vector Silhouette) -->
       <g transform="translate(15, 18)" fill="#e2e8f0" opacity="0.9">
         <!-- North America -->
         <path d="M 28,15 L 36,12 L 48,10 L 68,14 L 80,24 L 84,36 L 76,46 L 70,58 L 62,64 L 54,60 L 50,48 L 40,46 L 30,34 L 20,26 Z" />
         <path d="M 44,58 L 52,66 L 56,76 L 62,84 L 56,92 L 50,88 L 46,74 Z" />
-        <path d="M 62,8 L 82,6 L 88,14 L 78,18 Z" /> <!-- Greenland -->
+        <path d="M 62,8 L 82,6 L 88,14 L 78,18 Z" />
 
         <!-- South America -->
         <path d="M 66,95 L 76,96 L 86,108 L 84,124 L 78,140 L 72,148 L 68,136 L 64,116 L 62,104 Z" />
 
         <!-- Europe -->
         <path d="M 128,24 L 140,22 L 148,28 L 146,38 L 138,44 L 130,46 L 126,38 L 122,34 Z" />
-        <path d="M 120,20 L 124,14 L 128,18 L 124,24 Z" /> <!-- UK -->
-        <path d="M 136,10 L 144,8 L 148,16 L 142,22 Z" /> <!-- Scandinavia -->
+        <path d="M 120,20 L 124,14 L 128,18 L 124,24 Z" />
+        <path d="M 136,10 L 144,8 L 148,16 L 142,22 Z" />
 
         <!-- Africa -->
         <path d="M 126,50 L 144,48 L 158,56 L 164,74 L 158,94 L 148,114 L 138,118 L 132,106 L 124,84 L 122,66 Z" />
-        <path d="M 166,96 L 170,108 L 166,112 L 164,102 Z" /> <!-- Madagascar -->
+        <path d="M 166,96 L 170,108 L 166,112 L 164,102 Z" />
 
         <!-- Asia -->
         <path d="M 152,20 L 180,18 L 210,22 L 240,28 L 255,42 L 246,58 L 228,62 L 214,54 L 202,46 L 188,48 L 174,44 L 158,34 Z" />
-        <path d="M 218,60 L 230,68 L 242,76 L 232,84 L 222,78 L 216,68 Z" /> <!-- SE Asia -->
+        <path d="M 218,60 L 230,68 L 242,76 L 232,84 L 222,78 L 216,68 Z" />
         <!-- India Subcontinent -->
         <path d="M 188,52 L 204,54 L 208,68 L 198,84 L 188,72 Z" fill="#ffffff" />
-        <circle cx="196" cy="78" r="4" fill="#38bdf8" /> <!-- Kerala Pin -->
+        <circle cx="196" cy="78" r="4" fill="#38bdf8" />
 
         <!-- Australia & Oceania -->
         <path d="M 240,102 L 260,98 L 272,108 L 268,124 L 254,128 L 242,122 L 236,110 Z" />
@@ -132,17 +128,17 @@
     </g>
   </g>
 
-  <!-- Right Column: // WHO I AM -->
+  <!-- Right Column: // WHO I AM (TRANSPARENT) -->
   <g transform="translate(350, 0)">
     <!-- Header -->
     <text x="2" y="18" class="font-sans" font-size="15" font-weight="800" fill="#c084fc" letter-spacing="1.5">// WHO I AM</text>
 
     <!-- macOS Code Window -->
     <g transform="translate(0, 30)">
-      <rect width="590" height="448" rx="10" fill="url(#editor-dark)" stroke="#381d63" stroke-width="1.2" />
+      <rect width="590" height="448" rx="10" fill="none" stroke="#381d63" stroke-width="1.2" />
 
       <!-- Top window bar -->
-      <path d="M 0,10 C 0,4.5 4.5,0 10,0 L 580,0 C 585.5,0 590,4.5 590,10 L 590,32 L 0,32 Z" fill="#1b0e36" />
+      <path d="M 0,10 C 0,4.5 4.5,0 10,0 L 580,0 C 585.5,0 590,4.5 590,10 L 590,32 L 0,32 Z" fill="#1b0e36" fill-opacity="0.5" stroke="#381d63" stroke-width="1" />
       <circle cx="18" cy="16" r="5" fill="#ef4444" />
       <circle cx="34" cy="16" r="5" fill="#f59e0b" />
       <circle cx="50" cy="16" r="5" fill="#10b981" />

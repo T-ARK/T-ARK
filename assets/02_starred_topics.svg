@@ -16,7 +16,7 @@
   </style>
 
   <!-- Container Box -->
-  <rect width="940" height="195" rx="8" fill="url(#topic-bg)" stroke="#1e293b" stroke-width="1.2" />
+  <rect width="940" height="195" rx="8" fill="none" stroke="#1e293b" stroke-width="1.2" />
 
   <!-- Header -->
   <g transform="translate(18, 22)">

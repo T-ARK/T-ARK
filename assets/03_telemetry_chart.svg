@@ -26,7 +26,7 @@
   </style>
 
   <!-- Container Box -->
-  <rect width="940" height="260" rx="8" fill="url(#chart-bg)" stroke="#1e293b" stroke-width="1.2" />
+  <rect width="940" height="260" rx="8" fill="none" stroke="#1e293b" stroke-width="1.2" />
 
   <!-- Y-Axis Values & Grid Lines -->
   <g transform="translate(45, 0)">
