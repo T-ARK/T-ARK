@@ -1,0 +1,285 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 530" width="100%" height="100%">
+  <defs>
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e0822" />
+      <stop offset="100%" stop-color="#090516" />
+    </linearGradient>
+
+    <linearGradient id="purple-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#3b1f66" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.7" />
+    </linearGradient>
+
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .font-mono { font-family: 'SF Mono', Consolas, 'Fira Code', 'Courier New', monospace; font-size: 11px; }
+    .kw { fill: #c084fc; font-weight: 700; }
+    .fn { fill: #60a5fa; }
+    .str { fill: #86efac; }
+    .prop { fill: #f3e8ff; }
+    .val { fill: #fde047; }
+    .cmt { fill: #94a3b8; font-style: italic; }
+  </style>
+
+  <!-- Left: // WHO I AM Header -->
+  <text x="5" y="24" class="font-sans" font-size="16" font-weight="800" fill="#c084fc" letter-spacing="1.5">// WHO I AM</text>
+
+  <!-- Left Side: Terminal Code Box -->
+  <g transform="translate(0, 38)">
+    <!-- Box frame -->
+    <rect width="445" height="480" rx="12" fill="url(#card-bg)" stroke="url(#purple-border)" stroke-width="1.2" />
+
+    <!-- macOS Window Header Bar -->
+    <rect width="445" height="32" rx="12" fill="#140c2e" />
+    <circle cx="20" cy="16" r="5" fill="#ef4444" />
+    <circle cx="36" cy="16" r="5" fill="#f59e0b" />
+    <circle cx="52" cy="16" r="5" fill="#10b981" />
+    <text x="222" y="20" class="font-sans" font-size="11" fill="#a78bfa" text-anchor="middle" font-weight="600">developer.py</text>
+
+    <!-- Code Content -->
+    <g class="font-mono" transform="translate(16, 52)">
+      <text y="0"><tspan class="kw">class</tspan> <tspan class="val">Developer</tspan>:</text>
+      <text y="16">    <tspan class="kw">def</tspan> <tspan class="fn">__init__</tspan>(<tspan class="kw">self</tspan>):</text>
+      <text y="32">        <tspan class="prop">self.name</tspan> = <tspan class="str">"Arshid Chandran P K"</tspan></text>
+      <text y="48">        <tspan class="prop">self.location</tspan> = <tspan class="str">"Kerala, India 🇮🇳"</tspan></text>
+      <text y="64">        <tspan class="prop">self.degree</tspan> = <tspan class="str">"B.Tech - Computer Science</tspan></text>
+      <text y="80">                       <tspan class="str">Engineering (Data Science)"</tspan></text>
+      <text y="96">        <tspan class="prop">self.role</tspan> = <tspan class="str">"Aspiring Data Scientist &amp; Dev"</tspan></text>
+      <text y="116">        <tspan class="prop">self.stack</tspan> = {</text>
+      <text y="132">            <tspan class="str">"languages"</tspan>: [<tspan class="val">"Python"</tspan>, <tspan class="val">"C"</tspan>, <tspan class="val">"C++"</tspan>, <tspan class="val">"JS"</tspan>],</text>
+      <text y="148">            <tspan class="str">"web"</tspan>: [<tspan class="val">"HTML5"</tspan>, <tspan class="val">"CSS3"</tspan>, <tspan class="val">"Responsive"</tspan>],</text>
+      <text y="164">            <tspan class="str">"data_science"</tspan>: [<tspan class="val">"NumPy"</tspan>, <tspan class="val">"Pandas"</tspan>, <tspan class="val">"Scikit"</tspan>]</text>
+      <text y="180">        }</text>
+      <text y="200">        <tspan class="prop">self.currently_learning</tspan> = [</text>
+      <text y="216">            <tspan class="str">"Machine Learning"</tspan>, <tspan class="str">"Cybersecurity"</tspan>,</text>
+      <text y="232">            <tspan class="str">"Advanced Data Visualization"</tspan></text>
+      <text y="248">        ]</text>
+      <text y="268">        <tspan class="prop">self.interests</tspan> = [<tspan class="val">"Data Science"</tspan>, <tspan class="val">"AI"</tspan>,</text>
+      <text y="284">            <tspan class="val">"Cybersecurity"</tspan>, <tspan class="val">"Photography"</tspan>, <tspan class="val">"Design"</tspan>]</text>
+      <text y="304">        <tspan class="prop">self.languages_spoken</tspan> = [</text>
+      <text y="320">            <tspan class="str">"English"</tspan>, <tspan class="str">"Malayalam"</tspan>, <tspan class="str">"Hindi"</tspan>, <tspan class="str">"Tamil"</tspan>]</text>
+      <text y="340">        <tspan class="prop">self.fun_fact</tspan> = <tspan class="str">"I love debugging &amp; cameras 📷"</tspan></text>
+      <text y="366">    <tspan class="kw">def</tspan> <tspan class="fn">motto</tspan>(<tspan class="kw">self</tspan>):</text>
+      <text y="382">        <tspan class="kw">return</tspan> <tspan class="val">"Stay curious. Keep building."</tspan></text>
+    </g>
+  </g>
+
+  <!-- Middle Column: 4 Mini-Cards + Quote -->
+  <g transform="translate(460, 38)">
+    <!-- Mini Card 1: Location -->
+    <g transform="translate(0, 0)">
+      <rect width="185" height="52" rx="10" fill="url(#card-bg)" stroke="url(#purple-border)" stroke-width="1.2" />
+      <g transform="translate(14, 15)">
+        <!-- Pin icon -->
+        <path d="M 10,2 C 5.5,2 2,5.5 2,10 C 2,15 10,22 10,22 C 10,22 18,15 18,10 C 18,5.5 14.5,2 10,2 Z" fill="none" stroke="#a855f7" stroke-width="1.8" />
+        <circle cx="10" cy="10" r="3" fill="#c084fc" />
+      </g>
+      <text x="46" y="31" class="font-sans" font-size="12" font-weight="600" fill="#f3e8ff">Kerala, India 🇮🇳</text>
+    </g>
+
+    <!-- Mini Card 2: Degree -->
+    <g transform="translate(0, 64)">
+      <rect width="185" height="64" rx="10" fill="url(#card-bg)" stroke="url(#purple-border)" stroke-width="1.2" />
+      <g transform="translate(14, 18)">
+        <!-- Graduation Cap icon -->
+        <path d="M 2,9 L 12,3 L 22,9 L 12,15 Z" fill="#a855f7" />
+        <path d="M 6,11.5 L 6,17 C 6,19 8.5,21 12,21 C 15.5,21 18,19 18,17 L 18,11.5" fill="none" stroke="#c084fc" stroke-width="1.6" />
+        <line x1="22" y1="9" x2="22" y2="17" stroke="#a855f7" stroke-width="1.6" />
+      </g>
+      <text x="46" y="28" class="font-sans" font-size="11.5" font-weight="700" fill="#f3e8ff">B.Tech – CSE</text>
+      <text x="46" y="44" class="font-sans" font-size="10.5" fill="#a78bfa">(Data Science)</text>
+    </g>
+
+    <!-- Mini Card 3: Role -->
+    <g transform="translate(0, 140)">
+      <rect width="185" height="52" rx="10" fill="url(#card-bg)" stroke="url(#purple-border)" stroke-width="1.2" />
+      <g transform="translate(14, 15)">
+        <!-- Code tag icon </> -->
+        <text x="0" y="16" class="font-mono" font-size="15" font-weight="900" fill="#a855f7">&lt;/&gt;</text>
+      </g>
+      <text x="46" y="31" class="font-sans" font-size="11.5" font-weight="600" fill="#f3e8ff">Aspiring Developer</text>
+    </g>
+
+    <!-- Mini Card 4: Interests -->
+    <g transform="translate(0, 204)">
+      <rect width="185" height="74" rx="10" fill="url(#card-bg)" stroke="url(#purple-border)" stroke-width="1.2" />
+      <g transform="translate(14, 18)">
+        <!-- Heart icon -->
+        <path d="M 10,18 L 8.5,16.5 C 3.5,12 0,8.8 0,5 C 0,2.2 2.2,0 5,0 C 6.6,0 8.1,0.7 9,1.9 C 9.9,0.7 11.4,0 13,0 C 15.8,0 18,2.2 18,5 C 18,8.8 14.5,12 9.5,16.5 L 10,18 Z" fill="none" stroke="#a855f7" stroke-width="1.6" transform="translate(1, 2)" />
+      </g>
+      <text x="44" y="26" class="font-sans" font-size="11" font-weight="600" fill="#f3e8ff">Data Science,</text>
+      <text x="44" y="42" class="font-sans" font-size="11" fill="#a78bfa">Cybersecurity,</text>
+      <text x="44" y="58" class="font-sans" font-size="11" fill="#a78bfa">Photography</text>
+    </g>
+
+    <!-- Cursive Calligraphic Quote -->
+    <g transform="translate(10, 335)">
+      <text x="0" y="0" font-family="'Brush Script MT', 'Segoe Script', 'Great Vibes', cursive, sans-serif" font-size="34" font-style="italic" fill="#c084fc" filter="url(#soft-glow)">"Build. Learn.</text>
+      <text x="25" y="42" font-family="'Brush Script MT', 'Segoe Script', 'Great Vibes', cursive, sans-serif" font-size="34" font-style="italic" fill="#a855f7" filter="url(#soft-glow)">Improve."</text>
+    </g>
+  </g>
+
+  <!-- Right Side: // TECH STACK -->
+  <g transform="translate(660, 0)">
+    <text x="5" y="24" class="font-sans" font-size="16" font-weight="800" fill="#c084fc" letter-spacing="1.5">// TECH STACK</text>
+
+    <!-- Stack Card Container -->
+    <g transform="translate(0, 38)">
+      <rect width="275" height="480" rx="12" fill="url(#card-bg)" stroke="url(#purple-border)" stroke-width="1.2" />
+
+      <!-- Group 1: Languages -->
+      <g transform="translate(18, 20)">
+        <text x="0" y="0" class="font-sans" font-size="13" font-weight="700" fill="#e9d5ff">Languages</text>
+        <g transform="translate(0, 12)">
+          <!-- Python -->
+          <g transform="translate(0, 0)">
+            <rect width="36" height="36" rx="8" fill="#150d30" />
+            <path d="M 18,6 C 12,6 12.5,8.5 12.5,8.5 L 12.5,11 L 18.5,11 L 18.5,12 L 10,12 C 10,12 7,11.5 7,17.5 C 7,23.5 9.5,23.5 9.5,23.5 L 11.5,23.5 L 11.5,20.5 C 11.5,20.5 11.5,17 15,17 L 21,17 C 21,17 24,17 24,14 L 24,9 C 24,9 24.5,6 18,6 Z" fill="#38bdf8" />
+            <path d="M 18,30 C 24,30 23.5,27.5 23.5,27.5 L 23.5,25 L 17.5,25 L 17.5,24 L 26,24 C 26,24 29,24.5 29,18.5 C 29,12.5 26.5,12.5 26.5,12.5 L 24.5,12.5 L 24.5,15.5 C 24.5,15.5 24.5,19 21,19 L 15,19 C 15,19 12,19 12,22 L 12,27 C 12,27 11.5,30 18,30 Z" fill="#fbbf24" />
+            <circle cx="15" cy="8.5" r="1.2" fill="#ffffff" />
+            <circle cx="21" cy="27.5" r="1.2" fill="#ffffff" />
+          </g>
+          <!-- C -->
+          <g transform="translate(42, 0)">
+            <rect width="36" height="36" rx="8" fill="#150d30" />
+            <circle cx="18" cy="18" r="13" fill="#1e40af" />
+            <path d="M 23,12 C 21,10 16,10 14,13 C 12,16 12,20 14,23 C 16,26 21,26 23,24" fill="none" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" />
+          </g>
+          <!-- C++ -->
+          <g transform="translate(84, 0)">
+            <rect width="36" height="36" rx="8" fill="#150d30" />
+            <circle cx="18" cy="18" r="13" fill="#2563eb" />
+            <path d="M 16,13 C 14,11 11,11 10,13 C 9,15 9,18 10,20 C 11,22 14,22 16,20" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+            <text x="17" y="18" font-family="sans-serif" font-size="9" font-weight="900" fill="#ffffff">+</text>
+            <text x="23" y="18" font-family="sans-serif" font-size="9" font-weight="900" fill="#ffffff">+</text>
+          </g>
+          <!-- JS -->
+          <g transform="translate(126, 0)">
+            <rect width="36" height="36" rx="8" fill="#eab308" />
+            <text x="12" y="27" font-family="sans-serif" font-size="16" font-weight="900" fill="#000000">JS</text>
+          </g>
+          <!-- HTML5 -->
+          <g transform="translate(168, 0)">
+            <rect width="36" height="36" rx="8" fill="#ea580c" />
+            <text x="10" y="26" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff">5</text>
+          </g>
+          <!-- CSS3 -->
+          <g transform="translate(210, 0)">
+            <rect width="36" height="36" rx="8" fill="#0284c7" />
+            <text x="10" y="26" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff">3</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- Group 2: Backend -->
+      <g transform="translate(18, 120)">
+        <text x="0" y="0" class="font-sans" font-size="13" font-weight="700" fill="#e9d5ff">Backend</text>
+        <g transform="translate(0, 12)">
+          <!-- Flask -->
+          <g transform="translate(10, 0)">
+            <rect width="45" height="45" rx="10" fill="#150d30" />
+            <!-- Flask beaker -->
+            <path d="M 19,10 L 26,10 L 26,16 L 33,28 C 34.5,30.5 32.5,33 29.5,33 L 15.5,33 C 12.5,33 10.5,30.5 12,28 L 19,16 Z" fill="none" stroke="#ffffff" stroke-width="2" />
+            <circle cx="21" cy="27" r="2" fill="#c084fc" />
+            <circle cx="25" cy="24" r="1.5" fill="#c084fc" />
+          </g>
+          <!-- MySQL -->
+          <g transform="translate(85, 0)">
+            <rect width="55" height="45" rx="10" fill="#150d30" />
+            <text x="10" y="27" class="font-sans" font-size="11" font-weight="900" fill="#00758f">MySQL</text>
+            <path d="M 14,14 C 20,8 35,8 42,16" stroke="#f29111" stroke-width="2" fill="none" />
+          </g>
+          <!-- PostgreSQL -->
+          <g transform="translate(165, 0)">
+            <rect width="45" height="45" rx="10" fill="#150d30" />
+            <!-- Elephant head outline -->
+            <path d="M 22,12 C 16,12 14,16 14,20 C 14,25 18,26 18,31 L 22,31 C 22,27 21,25 21,23 C 24,23 27,22 28,19 C 29,15 27,12 22,12 Z" fill="#336791" />
+            <circle cx="20" cy="17" r="1.5" fill="#ffffff" />
+          </g>
+        </g>
+      </g>
+
+      <!-- Group 3: Tools -->
+      <g transform="translate(18, 230)">
+        <text x="0" y="0" class="font-sans" font-size="13" font-weight="700" fill="#e9d5ff">Tools</text>
+        <g transform="translate(0, 12)">
+          <!-- Git -->
+          <g transform="translate(5, 0)">
+            <rect width="42" height="42" rx="10" fill="#150d30" />
+            <rect x="11" y="11" width="20" height="20" rx="3" transform="rotate(45 21 21)" fill="#f05032" />
+            <circle cx="17" cy="21" r="2.5" fill="#ffffff" />
+            <circle cx="25" cy="17" r="2.5" fill="#ffffff" />
+            <line x1="17" y1="21" x2="25" y2="17" stroke="#ffffff" stroke-width="1.8" />
+          </g>
+          <!-- GitHub -->
+          <g transform="translate(65, 0)">
+            <rect width="42" height="42" rx="10" fill="#150d30" />
+            <circle cx="21" cy="21" r="14" fill="#ffffff" />
+            <circle cx="21" cy="21" r="11" fill="#000000" />
+            <path d="M 15,22 C 15,28 27,28 27,22 Z" fill="#ffffff" />
+          </g>
+          <!-- VS Code -->
+          <g transform="translate(125, 0)">
+            <rect width="42" height="42" rx="10" fill="#150d30" />
+            <path d="M 28,10 L 21,15 L 15,11 L 12,13 L 18,19 L 12,25 L 15,27 L 21,23 L 28,28 Z" fill="#007acc" />
+          </g>
+          <!-- Figma -->
+          <g transform="translate(185, 0)">
+            <rect width="42" height="42" rx="10" fill="#150d30" />
+            <circle cx="16" cy="15" r="4.5" fill="#f24e1e" />
+            <circle cx="25" cy="15" r="4.5" fill="#ff7262" />
+            <circle cx="16" cy="23" r="4.5" fill="#a259ff" />
+            <circle cx="25" cy="23" r="4.5" fill="#1abcfe" />
+            <circle cx="16" cy="30" r="4.5" fill="#0acf83" />
+          </g>
+        </g>
+      </g>
+
+      <!-- Group 4: Data Science -->
+      <g transform="translate(18, 345)">
+        <text x="0" y="0" class="font-sans" font-size="13" font-weight="700" fill="#e9d5ff">Data Science</text>
+        <g transform="translate(0, 12)">
+          <!-- Python -->
+          <g transform="translate(5, 0)">
+            <rect width="45" height="50" rx="8" fill="#150d30" />
+            <circle cx="22" cy="20" r="11" fill="#38bdf8" />
+            <text x="8" y="42" class="font-sans" font-size="9" font-weight="700" fill="#a78bfa">Python</text>
+          </g>
+          <!-- NumPy -->
+          <g transform="translate(65, 0)">
+            <rect width="45" height="50" rx="8" fill="#150d30" />
+            <circle cx="22" cy="20" r="11" fill="#4d77cf" />
+            <text x="22" y="24" font-family="sans-serif" font-size="10" font-weight="900" fill="#ffffff" text-anchor="middle">NP</text>
+            <text x="7" y="42" class="font-sans" font-size="9" font-weight="700" fill="#a78bfa">NumPy</text>
+          </g>
+          <!-- Pandas -->
+          <g transform="translate(125, 0)">
+            <rect width="45" height="50" rx="8" fill="#150d30" />
+            <!-- Bar chart lines -->
+            <line x1="16" y1="26" x2="16" y2="14" stroke="#ff4154" stroke-width="3" stroke-linecap="round" />
+            <line x1="22" y1="26" x2="22" y2="10" stroke="#130754" stroke-width="3" stroke-linecap="round" />
+            <line x1="28" y1="26" x2="28" y2="18" stroke="#ff4154" stroke-width="3" stroke-linecap="round" />
+            <text x="7" y="42" class="font-sans" font-size="9" font-weight="700" fill="#a78bfa">Pandas</text>
+          </g>
+          <!-- Scikit-learn -->
+          <g transform="translate(185, 0)">
+            <rect width="45" height="50" rx="8" fill="#150d30" />
+            <circle cx="22" cy="20" r="11" fill="#f89939" />
+            <text x="22" y="24" font-family="sans-serif" font-size="9" font-weight="900" fill="#ffffff" text-anchor="middle">SK</text>
+            <text x="5" y="42" class="font-sans" font-size="8" font-weight="700" fill="#a78bfa">Scikit-learn</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
